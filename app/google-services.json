@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219881522506",
+    "project_id": "parqueocentral-a6a46",
+    "storage_bucket": "parqueocentral-a6a46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219881522506:android:889999a11e4e420a5a6db3",
+        "android_client_info": {
+          "package_name": "com.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219881522506-228lh70dejql2jg0onu7qahab53t04e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO1AFQlhCkNlRUOVtCYulKdvf8ZNEpC-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219881522506-228lh70dejql2jg0onu7qahab53t04e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
