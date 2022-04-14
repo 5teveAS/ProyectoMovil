@@ -3,18 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/drawable/circular_button.xml" value="0.2985" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/drawable/custom_edittetext.xml" value="0.2985" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/drawable/ic_menu_camera.xml" value="0.14" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.14" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_bienvenida.xml" value="0.33" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_create_card.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_home.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_ingreso_datos2.xml" value="0.22" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_principal.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_registrarse.xml" value="0.358695652173913" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_splash_screen.xml" value="0.3484375" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/activity_update_card.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/app_bar_principal.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/content_principal.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/fragment_gallery.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/fragment_slideshow.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/nav_header_principal.xml" value="0.358695652173913" />
+        <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/layout/view.xml" value="0.358695652173913" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/menu/activity_main_drawer.xml" value="0.3625" />
         <entry key="..\:/SEXTO CUATRI/PROGRAMACION MOVIL/ProyectoFinalPrograMovil/app/src/main/res/menu/principal.xml" value="0.3625" />
       </map>
