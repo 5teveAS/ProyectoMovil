@@ -13,18 +13,21 @@ class CreateCard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_card)
+        etTime.setOnClickListener{ showTimePickerDialog()}
         database = Room.databaseBuilder(
             applicationContext, myDatabase::class.java, "To_Do"
         ).build()
         save_button.setOnClickListener {
             if (create_title.text.toString().trim { it <= ' ' }.isNotEmpty()
                 && create_priority.text.toString().trim { it <= ' ' }.isNotEmpty()
+                && etTime.text.toString().trim { it <= ' ' }.isNotEmpty()
             ) {
                 var title = create_title.getText().toString()
                 var priority = create_priority.getText().toString()
-                DataObject.setData(title, priority)
+                var hora = etTime.getText().toString()
+                DataObject.setData(title, priority, hora)
                 GlobalScope.launch {
-                    database.dao().insertTask(Entity(0, title, priority))
+                    database.dao().insertTask(Entity(0, title, priority, hora))
 
                 }
 
@@ -32,5 +35,13 @@ class CreateCard : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    private fun showTimePickerDialog() {
+        val timePicker = TimePickerFragment {onTimeSelected(it)}
+        timePicker.show(supportFragmentManager, "time")
+    }
+    private fun onTimeSelected(time:String){
+    etTime.setText(time)
     }
 }

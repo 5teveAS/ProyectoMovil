@@ -42,6 +42,18 @@
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
         />
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:hint="Selecciona la hora"
+        android:clickable="false"
+        android:background="@drawable/custom_edittetext"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/white"
+        android:focusable="false"/>
 
     <LinearLayout
         android:layout_width="250dp"

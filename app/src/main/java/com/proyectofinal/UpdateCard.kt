@@ -4,7 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.room.Room
+import kotlinx.android.synthetic.main.activity_create_card.*
 import kotlinx.android.synthetic.main.activity_update_card.*
+import kotlinx.android.synthetic.main.activity_update_card.create_priority
+import kotlinx.android.synthetic.main.activity_update_card.create_title
+import kotlinx.android.synthetic.main.activity_update_card.etTime
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -13,6 +17,7 @@ class UpdateCard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_update_card)
+        etTime.setOnClickListener{ showTimePickerDialog()}
         database = Room.databaseBuilder(
             applicationContext, myDatabase::class.java, "To_Do"
         ).build()
@@ -20,8 +25,10 @@ class UpdateCard : AppCompatActivity() {
         if (pos != -1) {
             val title = DataObject.getData(pos).title
             val priority = DataObject.getData(pos).priority
+            val hora = DataObject.getData(pos).hora
             create_title.setText(title)
             create_priority.setText(priority)
+            etTime.setText(hora)
 
             delete_button.setOnClickListener {
                 DataObject.deleteData(pos)
@@ -30,7 +37,8 @@ class UpdateCard : AppCompatActivity() {
                         Entity(
                             pos + 1,
                             create_title.text.toString(),
-                            create_priority.text.toString()
+                            create_priority.text.toString(),
+                            etTime.text.toString()
                         )
                     )
                 }
@@ -41,13 +49,15 @@ class UpdateCard : AppCompatActivity() {
                 DataObject.updateData(
                     pos,
                     create_title.text.toString(),
-                    create_priority.text.toString()
+                    create_priority.text.toString(),
+                    etTime.text.toString()
                 )
                 GlobalScope.launch {
                     database.dao().updateTask(
                         Entity(
                             pos + 1, create_title.text.toString(),
-                            create_priority.text.toString()
+                            create_priority.text.toString(),
+                            etTime.text.toString()
                         )
                     )
                 }
@@ -60,4 +70,12 @@ class UpdateCard : AppCompatActivity() {
         val intent = Intent(this, Home::class.java)
         startActivity(intent)
     }
+    private fun showTimePickerDialog() {
+        val timePicker = TimePickerFragment {onTimeSelected(it)}
+        timePicker.show(supportFragmentManager, "time")
+    }
+    private fun onTimeSelected(time:String){
+        etTime.setText(time)
+    }
+
 }

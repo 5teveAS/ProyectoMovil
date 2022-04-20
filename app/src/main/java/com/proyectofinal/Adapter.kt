@@ -13,6 +13,7 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
         var title = itemView.title
         var priority = itemView.priority
         var layout = itemView.mylayout
+        var hora = itemView.hora
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
@@ -22,13 +23,14 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         when (data[position].priority.toLowerCase()) {
-            "high" -> holder.layout.setBackgroundColor(Color.parseColor("#F05454"))
-            "medium" -> holder.layout.setBackgroundColor(Color.parseColor("#EDC988"))
+            "ocupado" -> holder.layout.setBackgroundColor(Color.parseColor("#F05454"))
+            "libre" -> holder.layout.setBackgroundColor(Color.parseColor("#EDC988"))
             else -> holder.layout.setBackgroundColor(Color.parseColor("#00917C"))
         }
 
         holder.title.text = data[position].title
         holder.priority.text = data[position].priority
+        holder.hora.text = data[position].hora
         holder.itemView.setOnClickListener{
             val intent= Intent(holder.itemView.context,UpdateCard::class.java)
             intent.putExtra("id",position)

@@ -12,15 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalPrograMovil">
-<!--        <activity-->
-<!--            android:name=".UpdateCard"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".SplashScreen"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".CreateCard"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".TimePicker"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".UpdateCard" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".SplashScreen" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".CreateCard" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".Registrarse"
             android:exported="false" />
@@ -41,22 +44,22 @@
         <activity
             android:name=".Bienvenida"
             android:exported="false" />
-        <activity android:name=".SplashScreen"
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".UpdateCard"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CreateCard"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
