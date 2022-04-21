@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 //        FirebaseApp.initializeApp(this)
 //        auth = Firebase.auth
 //
@@ -33,5 +34,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        var info = findViewById(R.id.btn_informacion) as Button
+        info.setOnClickListener {
+
+            val intent = Intent(this, com.proyectofinal.MasInformacion::class.java)
+            startActivity(intent)
+
+        }
+        var contact = findViewById(R.id.btn_contacto) as Button
+        contact.setOnClickListener {
+
+            val intent = Intent(this, com.proyectofinal.Contacto::class.java)
+            startActivity(intent)
+
+        }
+
     }
 }

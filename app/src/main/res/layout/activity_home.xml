@@ -50,16 +50,16 @@
             android:text="Reservas"
             android:textColor="@color/white"
             android:textSize="40sp" />
-        <Button
-            android:id="@+id/deleteAll"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="#FF5722"
-            android:text="X"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            />
+<!--        <Button-->
+<!--            android:id="@+id/deleteAll"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:backgroundTint="#FF5722"-->
+<!--            android:text="X"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
     </LinearLayout>
 
     <FrameLayout
@@ -79,8 +79,12 @@
             android:layout_gravity="center|bottom"
             android:layout_marginBottom="25dp"
             android:background="@drawable/circular_button"
+            android:backgroundTint="#A33939"
+            android:drawableTint="#28c0fc"
             android:text="+"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            app:rippleColor="#BD3F3F"
+            app:strokeColor="#851D1D" />
     </FrameLayout>
 </LinearLayout>

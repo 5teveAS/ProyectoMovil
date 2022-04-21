@@ -13,9 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalPrograMovil">
         <activity
-            android:name=".TimePicker"
+            android:name=".Contacto"
             android:exported="false" />
-        <!-- <activity -->
+        <activity
+            android:name=".MasInformacion"
+            android:exported="false" />
+        <activity
+            android:name=".TimePicker"
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".UpdateCard" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->
@@ -59,7 +64,7 @@
         <activity
             android:name=".CreateCard"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -1,8 +1,10 @@
 package com.proyectofinal
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.graphics.toColor
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.google.firebase.auth.ktx.auth
@@ -35,13 +37,13 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, CreateCard::class.java)
             startActivity(intent)
         }
-        deleteAll.setOnClickListener {
-            DataObject.deleteAll()
-            GlobalScope.launch {
-                database.dao().deleteAll()
-            }
-            setRecycler()
-        }
+//        deleteAll.setOnClickListener {
+//            DataObject.deleteAll()
+//            GlobalScope.launch {
+//                database.dao().deleteAll()
+//            }
+//            setRecycler()
+//        }
 
         setRecycler()
 
