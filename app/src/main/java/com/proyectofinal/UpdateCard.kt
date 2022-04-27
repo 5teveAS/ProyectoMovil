@@ -56,24 +56,29 @@
                 var name = DataObject.getData(pos).name
                 var phone = DataObject.getData(pos).phone
                 val hora = DataObject.getData(pos).hora
-                val nhora = hora.replace("Hora inicio: ","")
+                val nPhone = phone.replace("Teléfono: ","")
+                val nName = name.replace("Nombre: ","")
+                val nPlaca = placa.replace("Placa: ","")
+                val nDni = dni.replace("Cédula: ","")
+                val nTitle = title.replace("Espacio ","")
+                val nHora = hora.replace("Hora inicio: ","")
                 var disp = DataObject.getData(pos).priority
                 if (disp == "Libre") {
-                    create_title.setText(title)
+                    create_title.setText(nTitle)
                     create_priority.setSelection(1)
                     create_dni.setText("")
                     create_placa.setText("")
                     create_name.setText("")
                     create_phone.setText("")
-                    etTime.setText(nhora)
+                    etTime.setText(nHora)
                 } else {
-                    create_title.setText(title)
+                    create_title.setText(nTitle)
                     create_priority.setSelection(2)
-                    create_dni.setText(dni)
-                    create_placa.setText(placa)
-                    create_name.setText(name)
-                    create_phone.setText(phone)
-                    etTime.setText(nhora)
+                    create_dni.setText(nDni)
+                    create_placa.setText(nPlaca)
+                    create_name.setText(nName)
+                    create_phone.setText(nPhone)
+                    etTime.setText(nHora)
 
                 }
 
@@ -132,12 +137,12 @@
                             ) {
                                 DataObject.updateData(
                                     pos,
-                                    create_title.text.toString(),
+                                    "Espacio "+create_title.text.toString(),
                                     disponibilidad,
-                                    create_dni.text.toString(),
-                                    create_placa.text.toString(),
-                                    create_name.text.toString(),
-                                    create_phone.text.toString(),
+                                    "Cédula: "+create_dni.text.toString(),
+                                    "Placa: "+create_placa.text.toString(),
+                                    "Nombre: "+create_name.text.toString(),
+                                    "Teléfono: "+create_phone.text.toString(),
                                     "Hora inicio: "+etTime.text.toString()
                                 )
                                 ocupado = true
@@ -165,12 +170,12 @@
                                 database.dao().updateTask(
                                     Entity(
                                         pos + 1,
-                                        create_title.text.toString(),
+                                        "Espacio "+create_title.text.toString(),
                                         disponibilidad,
-                                        create_dni.text.toString(),
-                                        create_placa.text.toString(),
-                                        create_name.text.toString(),
-                                        create_phone.text.toString(),
+                                        "Cédula: "+create_dni.text.toString(),
+                                        "Placa: "+create_placa.text.toString(),
+                                        "Nombre: "+create_name.text.toString(),
+                                        "Teléfono: "+create_phone.text.toString(),
                                         "Hora inicio: "+etTime.text.toString()
                                     )
                                 )

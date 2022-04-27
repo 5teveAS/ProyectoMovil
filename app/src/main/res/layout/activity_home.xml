@@ -48,8 +48,10 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif"
             android:text="Reservas"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            android:textStyle="bold" />
 <!--        <Button-->
 <!--            android:id="@+id/deleteAll"-->
 <!--            android:layout_width="40dp"-->
